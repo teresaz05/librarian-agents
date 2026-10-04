@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "dataset": "xlangai/BRIGHT",
+  "domains": ["aops", "biology", "stackoverflow"],
+  "questions_per_domain": 50,
+  "samples_per_question": 4,
+  "builder_checkpoint_step": 89,
+  "retrieval": {
+    "embedding_model": "Qwen/Qwen3-Embedding-4B",
+    "reranker_model": "Qwen/Qwen3-Reranker-0.6B",
+    "late_interaction_model": "lightonai/Reason-ModernColBERT"
+  },
+  "answerer": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "max_turns": 32,
+    "max_output_tokens": 128
+  },
+  "judge": "gemini-3.1-flash-lite-preview",
+  "reporting": {
+    "primary_metric": "unbiased_pass_at_3",
+    "also_report": ["pass_at_1", "standard_error", "per_domain_results"],
+    "errors_score_as_zero": true
+  }
+}

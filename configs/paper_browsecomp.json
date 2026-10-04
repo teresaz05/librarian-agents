@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "dataset": {
+    "name": "BrowseComp+",
+    "official_rows": 830,
+    "training_tasks": 680,
+    "heldout_tasks": 50,
+    "excluded_tasks": 100,
+    "noise_seed": 20260523
+  },
+  "builder": {
+    "model": "Qwen/Qwen3.5-4B",
+    "lora_rank": 32,
+    "max_turns": 32,
+    "max_generation_tokens": 1024,
+    "max_trajectory_tokens": 60000,
+    "temperature": 1.0,
+    "compaction_model": "gemini-3.1-flash-lite-preview",
+    "compaction_trigger_tokens": 3000,
+    "compaction_input_max_chars": 30000,
+    "compaction_max_output_tokens": 500
+  },
+  "executor": {
+    "model": "Qwen/Qwen3.5-35B-A3B",
+    "backend": "openai_compatible",
+    "max_output_tokens": 512,
+    "temperature": 0.0
+  },
+  "training": {
+    "algorithm": "GRPO",
+    "loss_fn": "importance_sampling",
+    "learning_rate": 0.00004,
+    "batch_size": 8,
+    "group_size": 4,
+    "epochs": 10,
+    "reshuffle_each_epoch": true,
+    "max_steps": 850,
+    "seed": 2,
+    "checkpoint_interval": 85,
+    "selected_checkpoint_step": 55
+  },
+  "reward": {
+    "terminal_answerer_repeats": 4,
+    "terminal_correctness": true,
+    "answerability_delta_scale": 1.0,
+    "answerability_delta_min_abs": 0.25,
+    "answerability_delta_allow_negative": true,
+    "answerability_probe_repeats": 4,
+    "answerability_probe_interval_turns": 8,
+    "answerability_probe_max_per_episode": 4,
+    "answerability_probe_min_maturity": 0.45,
+    "discount_gamma": 1.0,
+    "filesystem_maturity_scale": 0.0,
+    "filesystem_maturity_delta_scale": 0.0,
+    "construction_action_bonus": 0.0,
+    "non_construction_turn_penalty": 0.0,
+    "tool_error_penalty": 0.0,
+    "termination_penalty": 0.0,
+    "empty_synthetic_penalty": 0.0,
+    "retrieval_cost_scale": 0.0,
+    "synthetic_read_cost_scale": 0.0
+  },
+  "answering": {
+    "model": "gemini-3.1-flash-lite-preview",
+    "workspace_mode": "synthetic_only",
+    "max_turns": 32,
+    "temperature": 0.0
+  },
+  "evaluation": {
+    "browsecomp_questions": 443,
+    "browsecomp_corpora": 50,
+    "errors_score_as_zero": true,
+    "bootstrap_resamples": 10000,
+    "selection_uses_evaluation_queries": false
+  }
+}

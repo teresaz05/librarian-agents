@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "librarian-agents"
+version = "0.1.0"
+description = "Training and evaluation code for Librarian Agents"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+data = [
+  "datasets>=4.0",
+  "tqdm>=4.66",
+]
+inference = [
+  "jinja2>=3.1",
+  "openai>=2.0",
+  "pandas>=2.2",
+  "tqdm>=4.66",
+]
+builder = [
+  "librarian-agents[data,inference]",
+  "chz==0.4.0",
+  "tinker-cookbook==0.5.3",
+  "torch>=2.4",
+  "wandb>=0.20",
+]
+baselines = [
+  "librarian-agents[inference]",
+  "faiss-cpu>=1.10",
+  "pylate==1.6.0",
+  "torch>=2.4",
+  "transformers>=4.50",
+  "vllm>=0.10",
+]
+plots = ["matplotlib>=3.9"]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.12",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["analysis*", "data_processing*", "environments*", "experiments*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
