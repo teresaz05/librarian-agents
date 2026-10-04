@@ -1,0 +1,608 @@
+{
+  "benchmark": "BRIGHT QA",
+  "dataset": "xlangai/BRIGHT",
+  "questions": [
+    {
+      "bright_query_id": "aops_1959_IMO_Problems/Problem_1",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_1987_IMO_Problems/Problem_1",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_1994_AIME_Problems/Problem_9",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_1998_AIME_Problems/Problem_2",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2000_AMC_12_Problems/Problem_14",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2002_AIME_I_Problems/Problem_6",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2004_AIME_I_Problems/Problem_10",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2005_IMO_Problems/Problem_4",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2005_USAMO_Problems/Problem_2",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2007_AIME_II_Problems/Problem_10",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2007_iTest_Problems/Problem_6",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2008_AMC_12A_Problems/Problem_16",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2013_AMC_12A_Problems/Problem_13",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2015_AMC_12A_Problems/Problem_22",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2016_AIME_I_Problems/Problem_15",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2017_AIME_II_Problems/Problem_1",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2017_AMC_10B_Problems/Problem_13",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2017_AMC_10B_Problems/Problem_14",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2018_AMC_10A_Problems/Problem_11",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2019_AMC_8_Problems/Problem_25",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2020_AMC_10B_Problems/Problem_25",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2020_AMC_8_Problems/Problem_12",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2021_AIME_I_Problems/Problem_10",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2021_AMC_12B_Problems/Problem_9",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2021_Fall_AMC_12A_Problems/Problem_12",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2023_AIME_I_Problems/Problem_5",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "aops_2024_AIME_I_Problems/Problem_10",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_test_counting_and_probability_1003",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_test_counting_and_probability_430",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_test_geometry_454",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_algebra_2826",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_counting_and_probability_5011",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_counting_and_probability_5048",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_counting_and_probability_5131",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_counting_and_probability_822",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_geometry_6018",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_geometry_6092",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_geometry_6105",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_geometry_6116",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_geometry_6173",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_geometry_747",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_intermediate_algebra_1822",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_intermediate_algebra_477",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_intermediate_algebra_659",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_number_theory_7012",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_number_theory_7030",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_number_theory_7066",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_number_theory_7078",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_number_theory_7095",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "math_train_number_theory_839",
+      "domain": "aops"
+    },
+    {
+      "bright_query_id": "0",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "102",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "11",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "15",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "17",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "2",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "20",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "24",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "27",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "29",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "3",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "30",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "33",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "34",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "36",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "37",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "41",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "42",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "43",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "45",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "46",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "5",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "50",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "55",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "58",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "59",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "61",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "62",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "63",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "65",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "69",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "71",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "72",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "73",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "75",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "76",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "77",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "81",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "82",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "83",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "84",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "87",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "88",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "89",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "90",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "91",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "96",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "97",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "98",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "99",
+      "domain": "biology"
+    },
+    {
+      "bright_query_id": "1",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "10",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "102",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "104",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "106",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "107",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "108",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "110",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "114",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "16",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "17",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "19",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "22",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "24",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "29",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "30",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "32",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "33",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "35",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "37",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "38",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "39",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "41",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "42",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "44",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "46",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "48",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "5",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "50",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "51",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "53",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "54",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "58",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "6",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "63",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "64",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "67",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "68",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "69",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "72",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "73",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "74",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "76",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "81",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "83",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "86",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "87",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "89",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "93",
+      "domain": "stackoverflow"
+    },
+    {
+      "bright_query_id": "99",
+      "domain": "stackoverflow"
+    }
+  ],
+  "schema_version": 1,
+  "selection": "paper_50_per_domain"
+}

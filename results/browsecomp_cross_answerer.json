@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "benchmark": "BrowseComp+",
+  "metric": "mean single-response semantic correctness",
+  "table": {
+    "Qwen3.5-4B": {
+      "embedding": 0.42,
+      "hybrid": 0.24,
+      "late_interaction": 0.38,
+      "rerank": 0.44,
+      "graph": 0.26,
+      "agentic": 0.44,
+      "autocompaction": 0.02,
+      "no_fine_tuning": 0.25,
+      "librarian": 0.75
+    },
+    "Gemini 3.1 Flash Lite": {
+      "embedding": 0.30,
+      "hybrid": 0.18,
+      "late_interaction": 0.30,
+      "rerank": 0.42,
+      "graph": 0.36,
+      "agentic": 0.42,
+      "autocompaction": 0.04,
+      "no_fine_tuning": 0.28,
+      "librarian": 0.77
+    }
+  }
+}

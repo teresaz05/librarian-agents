@@ -1,0 +1,26 @@
+{
+  "dataset": "BrowseComp+",
+  "official_dataset": "Tevatron/browsecomp-plus",
+  "official_repository": "https://github.com/texttron/BrowseComp-Plus",
+  "official_repository_commit": "046949032b0328319cc9a02663a759ec601d9402",
+  "validated_source": {
+    "filename": "browsecomp_plus_source.jsonl",
+    "bytes": 2127119019,
+    "sha256": "0374946363a5c59f4d3707fa9c31b9e5152269c0f024668a71687dda4e48a85e",
+    "rows": 830
+  },
+  "official_qrels_validation": {
+    "query_ids": 830,
+    "evidence_documents": 5064,
+    "gold_documents": 2407,
+    "mismatched_query_ids": 0
+  },
+  "heldout_validation": {
+    "manifest": "heldout_ids.json",
+    "manifest_sha256": "47c2de5cf02047f4ec21da6735aeb43c3a3b3141ab8eb93101b273684da4c61b",
+    "query_ids": 50,
+    "evidence_documents": 458,
+    "gold_documents": 177,
+    "negative_documents": 4358
+  }
+}

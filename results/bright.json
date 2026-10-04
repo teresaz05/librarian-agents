@@ -1,0 +1,352 @@
+{
+  "aggregate": {
+    "agentic": {
+      "correct_responses": 104,
+      "pass_at_1": 0.17333333333333334,
+      "pass_at_1_se": 0.0263289578105271,
+      "pass_at_3": 0.25666666666666665,
+      "pass_at_3_se": 0.03410297167559796,
+      "questions": 150,
+      "responses": 600
+    },
+    "autocomp": {
+      "correct_responses": 27,
+      "pass_at_1": 0.045,
+      "pass_at_1_se": 0.01673420320920539,
+      "pass_at_3": 0.04666666666666667,
+      "pass_at_3_se": 0.017279558643243598,
+      "questions": 150,
+      "responses": 600
+    },
+    "bm25": {
+      "correct_responses": 114,
+      "pass_at_1": 0.19,
+      "pass_at_1_se": 0.028149489089820033,
+      "pass_at_3": 0.26166666666666666,
+      "pass_at_3_se": 0.034703656483193596,
+      "questions": 150,
+      "responses": 600
+    },
+    "embed": {
+      "correct_responses": 125,
+      "pass_at_1": 0.20833333333333334,
+      "pass_at_1_se": 0.029196612942394173,
+      "pass_at_3": 0.28,
+      "pass_at_3_se": 0.03585953206984799,
+      "questions": 150,
+      "responses": 600
+    },
+    "graph": {
+      "correct_responses": 38,
+      "pass_at_1": 0.06333333333333334,
+      "pass_at_1_se": 0.018193999715634224,
+      "pass_at_3": 0.08333333333333333,
+      "pass_at_3_se": 0.022268780459353973,
+      "questions": 150,
+      "responses": 600
+    },
+    "hybrid": {
+      "correct_responses": 108,
+      "pass_at_1": 0.18,
+      "pass_at_1_se": 0.02819316559256434,
+      "pass_at_3": 0.24333333333333335,
+      "pass_at_3_se": 0.03393857679367264,
+      "questions": 150,
+      "responses": 600
+    },
+    "lateinter": {
+      "correct_responses": 107,
+      "pass_at_1": 0.17833333333333334,
+      "pass_at_1_se": 0.026686583725387934,
+      "pass_at_3": 0.255,
+      "pass_at_3_se": 0.03487513681385687,
+      "questions": 150,
+      "responses": 600
+    },
+    "librarian": {
+      "correct_responses": 312,
+      "pass_at_1": 0.52,
+      "pass_at_1_se": 0.033903402718365436,
+      "pass_at_3": 0.6683333333333333,
+      "pass_at_3_se": 0.036903091746659136,
+      "questions": 150,
+      "responses": 600
+    },
+    "rerank": {
+      "correct_responses": 104,
+      "pass_at_1": 0.17333333333333334,
+      "pass_at_1_se": 0.027370466401243982,
+      "pass_at_3": 0.23833333333333334,
+      "pass_at_3_se": 0.0338056581137993,
+      "questions": 150,
+      "responses": 600
+    }
+  },
+  "checks": {
+    "all_cells_complete": true
+  },
+  "per_domain": {
+    "agentic": {
+      "aops": {
+        "correct_responses": 57,
+        "pass_at_1": 0.285,
+        "pass_at_1_se": 0.05624744892174294,
+        "pass_at_3": 0.37,
+        "pass_at_3_se": 0.06785338335450239,
+        "questions": 50,
+        "responses": 200
+      },
+      "biology": {
+        "correct_responses": 34,
+        "pass_at_1": 0.17,
+        "pass_at_1_se": 0.04542318027309899,
+        "pass_at_3": 0.255,
+        "pass_at_3_se": 0.059113346674858805,
+        "questions": 50,
+        "responses": 200
+      },
+      "stackoverflow": {
+        "correct_responses": 13,
+        "pass_at_1": 0.065,
+        "pass_at_1_se": 0.024546914682056546,
+        "pass_at_3": 0.145,
+        "pass_at_3_se": 0.04465856866383024,
+        "questions": 50,
+        "responses": 200
+      }
+    },
+    "autocomp": {
+      "aops": {
+        "correct_responses": 12,
+        "pass_at_1": 0.06,
+        "pass_at_1_se": 0.033926691677251195,
+        "pass_at_3": 0.06,
+        "pass_at_3_se": 0.033926691677251195,
+        "questions": 50,
+        "responses": 200
+      },
+      "biology": {
+        "correct_responses": 12,
+        "pass_at_1": 0.06,
+        "pass_at_1_se": 0.033926691677251195,
+        "pass_at_3": 0.06,
+        "pass_at_3_se": 0.033926691677251195,
+        "questions": 50,
+        "responses": 200
+      },
+      "stackoverflow": {
+        "correct_responses": 3,
+        "pass_at_1": 0.015,
+        "pass_at_1_se": 0.015,
+        "pass_at_3": 0.02,
+        "pass_at_3_se": 0.02,
+        "questions": 50,
+        "responses": 200
+      }
+    },
+    "bm25": {
+      "aops": {
+        "correct_responses": 61,
+        "pass_at_1": 0.305,
+        "pass_at_1_se": 0.05945758220473359,
+        "pass_at_3": 0.37,
+        "pass_at_3_se": 0.06785338335450239,
+        "questions": 50,
+        "responses": 200
+      },
+      "biology": {
+        "correct_responses": 35,
+        "pass_at_1": 0.175,
+        "pass_at_1_se": 0.04587583063808975,
+        "pass_at_3": 0.26,
+        "pass_at_3_se": 0.06016982768186482,
+        "questions": 50,
+        "responses": 200
+      },
+      "stackoverflow": {
+        "correct_responses": 18,
+        "pass_at_1": 0.09,
+        "pass_at_1_se": 0.03331972511340172,
+        "pass_at_3": 0.155,
+        "pass_at_3_se": 0.047857142857142855,
+        "questions": 50,
+        "responses": 200
+      }
+    },
+    "embed": {
+      "aops": {
+        "correct_responses": 63,
+        "pass_at_1": 0.315,
+        "pass_at_1_se": 0.05968027055801231,
+        "pass_at_3": 0.38,
+        "pass_at_3_se": 0.06934092056863769,
+        "questions": 50,
+        "responses": 200
+      },
+      "biology": {
+        "correct_responses": 39,
+        "pass_at_1": 0.195,
+        "pass_at_1_se": 0.04806988959540354,
+        "pass_at_3": 0.29,
+        "pass_at_3_se": 0.06117889458675387,
+        "questions": 50,
+        "responses": 200
+      },
+      "stackoverflow": {
+        "correct_responses": 23,
+        "pass_at_1": 0.115,
+        "pass_at_1_se": 0.038604483191061884,
+        "pass_at_3": 0.17,
+        "pass_at_3_se": 0.05221619109284876,
+        "questions": 50,
+        "responses": 200
+      }
+    },
+    "graph": {
+      "aops": {
+        "correct_responses": 25,
+        "pass_at_1": 0.125,
+        "pass_at_1_se": 0.043594841484763225,
+        "pass_at_3": 0.155,
+        "pass_at_3_se": 0.050955162362890875,
+        "questions": 50,
+        "responses": 200
+      },
+      "biology": {
+        "correct_responses": 10,
+        "pass_at_1": 0.05,
+        "pass_at_1_se": 0.029450754468697576,
+        "pass_at_3": 0.06,
+        "pass_at_3_se": 0.033926691677251195,
+        "questions": 50,
+        "responses": 200
+      },
+      "stackoverflow": {
+        "correct_responses": 3,
+        "pass_at_1": 0.015,
+        "pass_at_1_se": 0.011088696211614303,
+        "pass_at_3": 0.035,
+        "pass_at_3_se": 0.02475389064451922,
+        "questions": 50,
+        "responses": 200
+      }
+    },
+    "hybrid": {
+      "aops": {
+        "correct_responses": 66,
+        "pass_at_1": 0.33,
+        "pass_at_1_se": 0.06406310664222475,
+        "pass_at_3": 0.37,
+        "pass_at_3_se": 0.06785338335450239,
+        "questions": 50,
+        "responses": 200
+      },
+      "biology": {
+        "correct_responses": 28,
+        "pass_at_1": 0.14,
+        "pass_at_1_se": 0.04295227536677974,
+        "pass_at_3": 0.205,
+        "pass_at_3_se": 0.055645562010178055,
+        "questions": 50,
+        "responses": 200
+      },
+      "stackoverflow": {
+        "correct_responses": 14,
+        "pass_at_1": 0.07,
+        "pass_at_1_se": 0.023733211036908786,
+        "pass_at_3": 0.155,
+        "pass_at_3_se": 0.047857142857142855,
+        "questions": 50,
+        "responses": 200
+      }
+    },
+    "lateinter": {
+      "aops": {
+        "correct_responses": 57,
+        "pass_at_1": 0.285,
+        "pass_at_1_se": 0.05486997617745324,
+        "pass_at_3": 0.375,
+        "pass_at_3_se": 0.06860490254392337,
+        "questions": 50,
+        "responses": 200
+      },
+      "biology": {
+        "correct_responses": 36,
+        "pass_at_1": 0.18,
+        "pass_at_1_se": 0.04898979485566356,
+        "pass_at_3": 0.245,
+        "pass_at_3_se": 0.05954333013247836,
+        "questions": 50,
+        "responses": 200
+      },
+      "stackoverflow": {
+        "correct_responses": 14,
+        "pass_at_1": 0.07,
+        "pass_at_1_se": 0.024784787961282105,
+        "pass_at_3": 0.145,
+        "pass_at_3_se": 0.047963634183427264,
+        "questions": 50,
+        "responses": 200
+      }
+    },
+    "librarian": {
+      "aops": {
+        "correct_responses": 72,
+        "pass_at_1": 0.36,
+        "pass_at_1_se": 0.055860613702906146,
+        "pass_at_3": 0.5,
+        "pass_at_3_se": 0.06925256939166184,
+        "questions": 50,
+        "responses": 200
+      },
+      "biology": {
+        "correct_responses": 69,
+        "pass_at_1": 0.345,
+        "pass_at_1_se": 0.04891162375934283,
+        "pass_at_3": 0.57,
+        "pass_at_3_se": 0.06509020428511153,
+        "questions": 50,
+        "responses": 200
+      },
+      "stackoverflow": {
+        "correct_responses": 171,
+        "pass_at_1": 0.855,
+        "pass_at_1_se": 0.03918168043400708,
+        "pass_at_3": 0.935,
+        "pass_at_3_se": 0.03411415410359872,
+        "questions": 50,
+        "responses": 200
+      }
+    },
+    "rerank": {
+      "aops": {
+        "correct_responses": 64,
+        "pass_at_1": 0.32,
+        "pass_at_1_se": 0.06146178504085415,
+        "pass_at_3": 0.375,
+        "pass_at_3_se": 0.06860490254392337,
+        "questions": 50,
+        "responses": 200
+      },
+      "biology": {
+        "correct_responses": 28,
+        "pass_at_1": 0.14,
+        "pass_at_1_se": 0.04050699108216521,
+        "pass_at_3": 0.23,
+        "pass_at_3_se": 0.056170295003821424,
+        "questions": 50,
+        "responses": 200
+      },
+      "stackoverflow": {
+        "correct_responses": 12,
+        "pass_at_1": 0.06,
+        "pass_at_1_se": 0.026302789485031383,
+        "pass_at_3": 0.11,
+        "pass_at_3_se": 0.04295227536677974,
+        "questions": 50,
+        "responses": 200
+      }
+    }
+  },
+  "standard_error_unit": "question"
+}

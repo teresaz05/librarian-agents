@@ -1,0 +1,99 @@
+{
+  "failure_policy": "answerer or judge errors invalidate the run",
+  "paired_bootstrap": {
+    "resamples": 10000,
+    "seed": 20260924,
+    "unit": "paired_corpus",
+    "variant_minus_original": {
+      "flattened": {
+        "bootstrap_se": 0.013134301555117092,
+        "ci95": [
+          -0.00696055684454755,
+          0.044083526682134555
+        ]
+      },
+      "shuffled": {
+        "bootstrap_se": 0.017035152363394757,
+        "ci95": [
+          -0.0750042710706151,
+          -0.009090393733250834
+        ]
+      }
+    }
+  },
+  "paired_read_cost_bootstrap": {
+    "resamples": 10000,
+    "seed": 20260925,
+    "unit": "paired_corpus",
+    "variant_minus_original_tokens": {
+      "flattened": {
+        "bootstrap_se": 205.12441299986207,
+        "ci95": [
+          1474.4349768718444,
+          2274.346031083142
+        ]
+      },
+      "shuffled": {
+        "bootstrap_se": 43.064410255085114,
+        "ci95": [
+          -106.93397785818644,
+          61.750940513912134
+        ]
+      }
+    },
+    "variant_over_original_tokens": {
+      "flattened": {
+        "bootstrap_se": 0.05133733074134755,
+        "ci95": [
+          1.412183889695416,
+          1.613174380168482
+        ]
+      },
+      "shuffled": {
+        "bootstrap_se": 0.011934298069571095,
+        "ci95": [
+          0.9705444961117172,
+          1.017339062757843
+        ]
+      }
+    }
+  },
+  "report_type": "browsecomp_hierarchy_ablation",
+  "schema_version": 1,
+  "standard_error_unit": "corpus_cluster_bootstrap",
+  "transformation_checks": {
+    "all_invariants_verified": true,
+    "corpora": 49,
+    "payload_definition": "all file fields except parent_id, including text, metadata, and provenance",
+    "corpora_by_invariant": {
+      "flattened_has_no_parent_edges": 49,
+      "node_ids_preserved": 49,
+      "payload_multiset_preserved": 49,
+      "shuffled_depth_profile_preserved": 49
+    }
+  },
+  "transformation_seed": 20260924,
+  "variants": {
+    "flattened": {
+      "mean_answerer_tokens_read": 5497.082183908046,
+      "mean_answerer_tokens_read_cluster_bootstrap_se": 356.1687722103938,
+      "question_micro_accuracy": 0.5770114942528736,
+      "question_micro_accuracy_cluster_bootstrap_se": 0.02811098196384059,
+      "questions": 435
+    },
+    "original": {
+      "mean_answerer_tokens_read": 3634.7919540229886,
+      "mean_answerer_tokens_read_cluster_bootstrap_se": 216.01668141778055,
+      "question_micro_accuracy": 0.5586206896551724,
+      "question_micro_accuracy_cluster_bootstrap_se": 0.02583604870637806,
+      "questions": 435
+    },
+    "shuffled": {
+      "mean_answerer_tokens_read": 3611.6632183908046,
+      "mean_answerer_tokens_read_cluster_bootstrap_se": 220.9682005707825,
+      "question_micro_accuracy": 0.5172413793103449,
+      "question_micro_accuracy_cluster_bootstrap_se": 0.02870287964992062,
+      "questions": 435
+    }
+  }
+}

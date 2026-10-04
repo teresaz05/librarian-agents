@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "table_1": {
+    "rows": {
+      "graph_rag": {
+        "accuracy": 0.36,
+        "construction_tokens": 11923
+      },
+      "autocompaction": {
+        "accuracy": 0.04,
+        "construction_tokens": 501637
+      },
+      "builder_no_fine_tuning": {
+        "accuracy": 0.28,
+        "construction_tokens": 127683
+      },
+      "librarian": {
+        "accuracy": 0.77,
+        "construction_tokens": 178926
+      }
+    }
+  },
+  "table_4": {
+    "columns": [
+      "synthetic_files_read",
+      "synthetic_tokens_read",
+      "total_tokens_read",
+      "active_files",
+      "clusters",
+      "merges"
+    ],
+    "rows": {
+      "biology_base": [
+        2.7,
+        1064,
+        1189,
+        5.4,
+        4.9,
+        0.5
+      ],
+      "biology_rl": [
+        30.4,
+        9883,
+        10091,
+        54.0,
+        45.8,
+        8.2
+      ],
+      "stackoverflow_base": [
+        3.3,
+        1075,
+        1250,
+        4.5,
+        4.0,
+        0.5
+      ],
+      "stackoverflow_rl": [
+        32.0,
+        9246,
+        9511,
+        49.5,
+        40.6,
+        8.8
+      ],
+      "aops_base": [
+        3.9,
+        879,
+        1023,
+        4.5,
+        3.8,
+        0.7
+      ],
+      "aops_rl": [
+        36.2,
+        7309,
+        7544,
+        56.7,
+        49.7,
+        7.0
+      ],
+      "macro_base": [
+        3.3,
+        1006,
+        1154,
+        4.8,
+        4.2,
+        0.6
+      ],
+      "macro_rl": [
+        32.9,
+        8813,
+        9049,
+        53.4,
+        45.4,
+        8.0
+      ]
+    }
+  },
+  "table_5": {
+    "columns": [
+      "synthetic_files_read",
+      "synthetic_tokens_read",
+      "total_tokens_read",
+      "active_files",
+      "clusters",
+      "merges"
+    ],
+    "rows": {
+      "base": [
+        2.7,
+        1069,
+        1235,
+        3.2,
+        2.7,
+        0.6
+      ],
+      "rl": [
+        26.9,
+        9040,
+        9309,
+        42.2,
+        34.4,
+        7.8
+      ]
+    }
+  },
+  "table_6": {
+    "questions_per_domain": 20,
+    "domains": [
+      "earth_science",
+      "economics",
+      "psychology",
+      "robotics",
+      "sustainable_living",
+      "leetcode",
+      "pony",
+      "theoremqa_questions",
+      "theoremqa_theorems"
+    ],
+    "base": [
+      0.263,
+      0.163,
+      0.325,
+      0.237,
+      0.125,
+      0.287,
+      0.487,
+      0.350,
+      0.388
+    ],
+    "librarian": [
+      0.738,
+      0.725,
+      0.725,
+      0.550,
+      0.438,
+      0.562,
+      0.725,
+      0.637,
+      0.562
+    ]
+  }
+}

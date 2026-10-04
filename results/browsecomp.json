@@ -1,0 +1,62 @@
+{
+  "matched_configuration": {
+    "only_differences": [
+      "load_checkpoint_path",
+      "log_path",
+      "wandb_name"
+    ],
+    "shared_hard_caps": {
+      "group_size": 1,
+      "max_tokens_per_builder_action": 1024,
+      "max_trajectory_tokens": 60000,
+      "max_turns": 32
+    },
+    "verified": true
+  },
+  "paired_rl_minus_base_accuracy": {
+    "bootstrap_se": 0.04167633365774228,
+    "ci95": [
+      0.3147321428571429,
+      0.47748000242394856
+    ],
+    "estimate": 0.39503386004514673,
+    "resamples": 10000,
+    "seed": 19105,
+    "unit": "paired_corpus"
+  },
+  "report_type": "browsecomp_equal_construction_cap_base_vs_rl",
+  "rl_over_base_correct_per_builder_token": {
+    "bootstrap_se": 0.32310046888507127,
+    "ci95": [
+      1.7530125279665587,
+      3.0100738115320933
+    ],
+    "estimate": 2.2495332679880553
+  },
+  "schema_version": 1,
+  "standard_error_unit": "corpus_cluster_bootstrap",
+  "scores": {
+    "base": {
+      "builder_tokens_per_corpus": 126012.2,
+      "builder_tokens_total": 6300610,
+      "capped_failure_corpora": 14,
+      "corpora": 50,
+      "correct_answers_per_million_builder_tokens": 16.982482648505464,
+      "correct_sum": 107.0,
+      "question_micro_accuracy": 0.24153498871331827,
+      "question_micro_accuracy_cluster_bootstrap_se": 0.03554456935683771,
+      "questions": 443
+    },
+    "rl": {
+      "builder_tokens_per_corpus": 147633.7,
+      "builder_tokens_total": 7381685,
+      "capped_failure_corpora": 0,
+      "corpora": 50,
+      "correct_answers_per_million_builder_tokens": 38.20265969084294,
+      "correct_sum": 282.0,
+      "question_micro_accuracy": 0.636568848758465,
+      "question_micro_accuracy_cluster_bootstrap_se": 0.02945583881235749,
+      "questions": 443
+    }
+  }
+}
