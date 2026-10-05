@@ -95,6 +95,8 @@ def reproduce_bright() -> dict[str, Any]:
             domain_reference = expected["per_domain"][method][domain]
             for field in ("pass_at_1", "pass_at_1_se", "pass_at_3", "pass_at_3_se"):
                 _close(domain_summary[field], domain_reference[field])
+        for field in ("pass_at_1", "pass_at_1_se", "pass_at_3", "pass_at_3_se"):
+            _close(actual["macro_average"][method][field], expected["macro_average"][method][field])
     return actual
 
 
@@ -170,7 +172,7 @@ def main() -> None:
     print(
         "BRIGHT: "
         f"{bright['aggregate']['librarian']['pass_at_1']:.2%} pass@1, "
-        f"{bright['aggregate']['librarian']['pass_at_3']:.2%} pass@3"
+        f"{bright['macro_average']['librarian']['pass_at_3']:.2%} pass@3"
     )
     print(
         "Hierarchy ablation: "

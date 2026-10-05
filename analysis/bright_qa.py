@@ -146,9 +146,10 @@ def summarize_methods(
 ) -> dict[str, Any]:
     result: dict[str, Any] = {
         "aggregate": {},
+        "macro_average": {},
         "per_domain": {},
         "checks": {"all_cells_complete": True},
-        "standard_error_unit": "question",
+        "standard_error_unit": "question within domain; propagated across domains",
     }
     for method, grouped in sorted(methods.items()):
         result["aggregate"][method] = summarize(grouped)
@@ -158,6 +159,20 @@ def summarize_methods(
             if len(domain_scores) != QUESTIONS_PER_DOMAIN:
                 raise ValueError(f"Expected 50 {domain} questions, found {len(domain_scores)}")
             result["per_domain"][method][domain] = _summarize(domain_scores)
+        domain_summaries = list(result["per_domain"][method].values())
+        result["macro_average"][method] = {
+            "domains": len(domain_summaries),
+            "pass_at_1": statistics.mean(row["pass_at_1"] for row in domain_summaries),
+            "pass_at_1_se": math.sqrt(
+                sum(row["pass_at_1_se"] ** 2 for row in domain_summaries)
+            )
+            / len(domain_summaries),
+            "pass_at_3": statistics.mean(row["pass_at_3"] for row in domain_summaries),
+            "pass_at_3_se": math.sqrt(
+                sum(row["pass_at_3_se"] ** 2 for row in domain_summaries)
+            )
+            / len(domain_summaries),
+        }
     return result
 
 

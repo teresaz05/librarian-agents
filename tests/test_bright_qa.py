@@ -88,5 +88,13 @@ def test_bundled_scores_reproduce_paper_table() -> None:
     report = bright_qa.summarize_methods(methods)
 
     assert report["aggregate"]["librarian"]["pass_at_1"] == 312 / 600
-    assert report["aggregate"]["librarian"]["pass_at_3"] == 0.6683333333333333
-    assert report["aggregate"]["embed"]["pass_at_3"] == 0.28
+    assert report["macro_average"]["librarian"]["pass_at_1"] == pytest.approx(0.52)
+    assert report["macro_average"]["librarian"]["pass_at_1_se"] == pytest.approx(
+        0.027984041451579487
+    )
+    assert report["macro_average"]["librarian"]["pass_at_3"] == pytest.approx(
+        0.6683333333333333
+    )
+    assert report["macro_average"]["librarian"]["pass_at_3_se"] == pytest.approx(
+        0.03365912220983352
+    )

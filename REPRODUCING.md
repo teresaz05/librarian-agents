@@ -61,8 +61,9 @@ The fixed manifest contains 50 questions from each of AOPS, Biology, and Stack
 Overflow. Four answers are sampled per question at temperature 0.7 and top-p
 1.0. Each domain corpus contains every selected question's gold documents and
 sampled distractors up to 50 documents. The scorer reports pass@1 and unbiased
-pass@3, with standard errors over questions. For a question with `c` correct
-responses among four samples, pass@3 is `1 - C(4-c, 3) / C(4, 3)`.
+pass@3, estimated from four responses per question. Per-domain standard errors
+use questions as the independent unit. The Average columns are equal-weight
+macro-averages, with standard errors propagated from the domain estimates.
 
 Static retrieval generation is implemented in
 `experiments/inference/strong_retrieval.py`; GraphRAG, Agentic RAG, and

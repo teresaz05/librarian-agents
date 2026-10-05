@@ -20,6 +20,7 @@
   "judge": "gemini-3.1-flash-lite-preview",
   "reporting": {
     "primary_metric": "unbiased_pass_at_3",
+    "aggregation": "equal_weight_domain_macro_average",
     "also_report": ["pass_at_1", "standard_error", "per_domain_results"],
     "errors_score_as_zero": true
   }

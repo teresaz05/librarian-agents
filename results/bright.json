@@ -85,6 +85,71 @@
   "checks": {
     "all_cells_complete": true
   },
+  "macro_average": {
+    "agentic": {
+      "domains": 3,
+      "pass_at_1": 0.17333333333333334,
+      "pass_at_1_se": 0.025450587936310127,
+      "pass_at_3": 0.25666666666666665,
+      "pass_at_3_se": 0.03348773762780298
+    },
+    "autocomp": {
+      "domains": 3,
+      "pass_at_1": 0.045,
+      "pass_at_1_se": 0.01675656029515515,
+      "pass_at_3": 0.04666666666666666,
+      "pass_at_3_se": 0.017327052760628812
+    },
+    "bm25": {
+      "domains": 3,
+      "pass_at_1": 0.19,
+      "pass_at_1_se": 0.027386127875258306,
+      "pass_at_3": 0.26166666666666666,
+      "pass_at_3_se": 0.03418055964428277
+    },
+    "embed": {
+      "domains": 3,
+      "pass_at_1": 0.20833333333333334,
+      "pass_at_1_se": 0.028602166005859717,
+      "pass_at_3": 0.28,
+      "pass_at_3_se": 0.035398604838182475
+    },
+    "graph": {
+      "domains": 3,
+      "pass_at_1": 0.06333333333333334,
+      "pass_at_1_se": 0.017922104063389347,
+      "pass_at_3": 0.08333333333333333,
+      "pass_at_3_se": 0.02201061380746584
+    },
+    "hybrid": {
+      "domains": 3,
+      "pass_at_1": 0.18000000000000002,
+      "pass_at_1_se": 0.02689949379523543,
+      "pass_at_3": 0.24333333333333332,
+      "pass_at_3_se": 0.033318023695109014
+    },
+    "lateinter": {
+      "domains": 3,
+      "pass_at_1": 0.17833333333333332,
+      "pass_at_1_se": 0.025873624493766706,
+      "pass_at_3": 0.255,
+      "pass_at_3_se": 0.03424187011444089
+    },
+    "librarian": {
+      "domains": 3,
+      "pass_at_1": 0.52,
+      "pass_at_1_se": 0.027984041451579487,
+      "pass_at_3": 0.6683333333333333,
+      "pass_at_3_se": 0.03365912220983352
+    },
+    "rerank": {
+      "domains": 3,
+      "pass_at_1": 0.17333333333333334,
+      "pass_at_1_se": 0.026055931467246576,
+      "pass_at_3": 0.23833333333333334,
+      "pass_at_3_se": 0.032840748152699335
+    }
+  },
   "per_domain": {
     "agentic": {
       "aops": {
@@ -348,5 +413,5 @@
       }
     }
   },
-  "standard_error_unit": "question"
+  "standard_error_unit": "question within domain; propagated across domains"
 }

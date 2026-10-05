@@ -49,15 +49,16 @@ The reported aggregates are stored in
 
 ## BRIGHT question answering
 
-Each cell reports pass@1 ± SE / pass@3 ± SE. Standard errors use questions as
-the independent unit; pass@3 is estimated from the four responses per question.
+Each cell reports pass@1 ± SE / pass@3 ± SE. Per-domain standard errors use
+questions as the independent unit. The Average row is an equal-weight macro-
+average, with standard errors propagated from the three domain estimates.
 
 | Domain | BM25 | Dense | Hybrid | Rerank | Agentic | Late interaction | Graph | AutoComp. | Librarian |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | AOPS | .305±.059 / .370±.068 | .315±.060 / .380±.069 | .330±.064 / .370±.068 | .320±.061 / .375±.069 | .285±.056 / .370±.068 | .285±.055 / .375±.069 | .125±.044 / .155±.051 | .060±.034 / .060±.034 | **.360±.056 / .500±.069** |
 | Biology | .175±.046 / .260±.060 | .195±.048 / .290±.061 | .140±.043 / .205±.056 | .140±.041 / .230±.056 | .170±.045 / .255±.059 | .180±.049 / .245±.060 | .050±.029 / .060±.034 | .060±.034 / .060±.034 | **.345±.049 / .570±.065** |
 | Stack Overflow | .090±.033 / .155±.048 | .115±.039 / .170±.052 | .070±.024 / .155±.048 | .060±.026 / .110±.043 | .065±.025 / .145±.045 | .070±.025 / .145±.048 | .015±.011 / .035±.025 | .015±.015 / .020±.020 | **.855±.039 / .935±.034** |
-| Average | .190±.028 / .262±.035 | .208±.029 / .280±.036 | .180±.028 / .243±.034 | .173±.027 / .238±.034 | .173±.026 / .257±.034 | .178±.027 / .255±.035 | .063±.018 / .083±.022 | .045±.017 / .047±.017 | **.520±.034 / .668±.037** |
+| Average | .190±.027 / .262±.034 | .208±.029 / .280±.035 | .180±.027 / .243±.033 | .173±.026 / .238±.033 | .173±.025 / .257±.033 | .178±.026 / .255±.034 | .063±.018 / .083±.022 | .045±.017 / .047±.017 | **.520±.028 / .668±.034** |
 
 `results/bright_per_question.jsonl` contains all 5,400 binary judgments in
 1,350 method-question rows.
