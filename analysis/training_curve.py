@@ -40,9 +40,13 @@ def main() -> None:
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     plt.figure(figsize=(6.4, 3.2))
-    plt.plot([step for step, _ in points], smoothed, linewidth=2)
+    steps = [step for step, _ in points]
+    values = [value for _, value in points]
+    plt.scatter(steps, values, s=14, alpha=0.45, label="Reward")
+    plt.plot(steps, smoothed, linewidth=2, label="EMA")
     plt.xlabel("Training step")
     plt.ylabel("Aggregate rollout reward")
+    plt.legend(frameon=False)
     plt.tight_layout()
     plt.savefig(args.output, dpi=200)
 
