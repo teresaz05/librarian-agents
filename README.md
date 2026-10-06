@@ -1,11 +1,10 @@
-# Librarian Agents
+# Librarian Agents: Training LLMs to Curate Workspaces that Anticipate Future Queries
 
 ![Librarian Agents](assets/overview.png)
 
-**Librarian Agents: Anticipatory Filesystem Construction via Reinforcement
-Learning** trains a builder agent to organize a document corpus into a reusable
-hierarchical filesystem before future queries are revealed. An answering agent
-then navigates that filesystem to answer queries.
+Librarian Agents trains a builder agent to organize a document corpus into a
+reusable hierarchical filesystem-based workspace before future queries are
+revealed. An answering agent then navigates that workspace to answer queries.
 
 ![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)
 [![Project website](https://img.shields.io/badge/Project-Website-1f6feb.svg)](https://librarian-agents.github.io/)
@@ -52,7 +51,7 @@ in [RESULTS.md](RESULTS.md), and checkpoint assignments are in
 
 ```bibtex
 @article{singh2026librarian,
-  title   = {Librarian Agents: Anticipatory Filesystem Construction via Reinforcement Learning},
+  title   = {Librarian Agents: Training LLMs to Curate Workspaces that Anticipate Future Queries},
   author  = {Singh, Anikait and Zhang, Teresa and Lee, Yoonho and Nair, Roshen Sanjay and Kumar, Aviral and Finn, Chelsea},
   year    = {2026}
 }

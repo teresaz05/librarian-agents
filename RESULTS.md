@@ -22,6 +22,9 @@ These values are recomputed from `results/browsecomp_per_corpus.jsonl`.
 
 The same 49 corpora and 435 questions are evaluated with the original,
 flattened, and shuffled Librarian filesystems.
+This experiment uses the expanded amortization questions and a fresh matched
+answering run, rather than the original one-question-per-corpus evaluation in
+the paper's main BrowseComp+ figure.
 
 | Filesystem | Accuracy +/- SE | Mean navigation tokens +/- SE |
 |---|---:|---:|
