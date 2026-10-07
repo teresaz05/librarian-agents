@@ -77,9 +77,10 @@ scripts/run_bright_baselines.sh
 
 ## Hierarchy ablation
 
-The fixed manifest contains the 49 corpora and 435 questions used to compare
-the original Librarian filesystem with content-preserving flattened and
-shuffled variants. The transformation seed is `20260924`. The runner checks
+The fixed manifest contains the 49 corpora with completed filesystem snapshots
+and their 435 questions, used to compare the original Librarian filesystem with
+content-preserving flattened and shuffled variants. The transformation seed is
+`20260924`. The runner checks
 that node payloads and identifiers are unchanged, flattening removes all parent
 edges, and shuffling preserves the hierarchy depth profile.
 These are expanded amortization questions evaluated in a fresh matched run, not
