@@ -38,7 +38,8 @@ late-interaction, reranking, GraphRAG, Agentic RAG, and AutoCompaction results.
 ## Training
 
 Training uses [Tinker](https://thinkingmachines.ai/tinker/) for model
-post-training. See
+post-training and [Modal](https://modal.com/) to host the Qwen3.5-35B executor
+used for inference. See
 [`scripts/train_browsecomp_plus.sh`](scripts/train_browsecomp_plus.sh) for the
 BrowseComp+ training launch used by this project.
 
@@ -69,8 +70,8 @@ in [RESULTS.md](RESULTS.md), and checkpoint assignments are in
 
 ## Acknowledgments
 
-We thank [Modal](https://modal.com/) and
-[Tinker](https://thinkingmachines.ai/tinker/) for their generous compute support.
+We thank [Tinker](https://thinkingmachines.ai/tinker/) for generously providing
+training compute and [Modal](https://modal.com/) for supporting model inference.
 
 ## License
 
