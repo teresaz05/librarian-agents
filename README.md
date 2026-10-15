@@ -70,7 +70,7 @@ in [RESULTS.md](RESULTS.md), and checkpoint assignments are in
 ## Acknowledgments
 
 We thank [Modal](https://modal.com/) and
-[Tinker](https://thinkingmachines.ai/tinker/) for compute support.
+[Tinker](https://thinkingmachines.ai/tinker/) for their generous compute support.
 
 ## License
 
