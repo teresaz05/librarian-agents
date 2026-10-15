@@ -35,6 +35,16 @@ cp .env.example .env
 Install `.[baselines]` on a CUDA machine to generate the dense, hybrid,
 late-interaction, reranking, GraphRAG, Agentic RAG, and AutoCompaction results.
 
+## Training
+
+Training uses [Tinker](https://thinkingmachines.ai/tinker/) for model
+post-training. See
+[`scripts/train_browsecomp_plus.sh`](scripts/train_browsecomp_plus.sh) for the
+BrowseComp+ training launch used by this project.
+
+Note the launcher expects `TINKER_API_KEY`, `GEMINI_API_KEY`, and the
+OpenAI-compatible executor variables documented in [`.env.example`](.env.example).
+
 ## Reproduce Reported Results
 
 ```bash
@@ -56,6 +66,11 @@ in [RESULTS.md](RESULTS.md), and checkpoint assignments are in
   year    = {2026}
 }
 ```
+
+## Acknowledgments
+
+We thank [Modal](https://modal.com/) and
+[Tinker](https://thinkingmachines.ai/tinker/) for compute support.
 
 ## License
 
