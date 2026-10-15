@@ -1,4 +1,4 @@
-# Librarian Agents: Training LLMs to Curate Workspaces that Anticipate Future Queries
+# Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries
 
 ![Librarian Agents](assets/overview.png)
 
