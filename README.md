@@ -6,7 +6,7 @@ Librarian Agents trains a builder agent to organize a document corpus into a
 reusable hierarchical filesystem-based workspace before future queries are
 revealed. An answering agent then navigates that workspace to answer queries.
 
-![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.22273-b31b1b.svg)](https://arxiv.org/abs/2610.22273)
 [![Project website](https://img.shields.io/badge/Project-Website-1f6feb.svg)](https://librarian-agents.github.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -62,9 +62,11 @@ in [RESULTS.md](RESULTS.md), and checkpoint assignments are in
 
 ```bibtex
 @article{singh2026librarian,
-  title   = {Librarian Agents: Training LLMs to Curate Workspaces that Anticipate Future Queries},
-  author  = {Singh, Anikait and Zhang, Teresa and Lee, Yoonho and Nair, Roshen Sanjay and Kumar, Aviral and Finn, Chelsea},
-  year    = {2026}
+  title         = {Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries},
+  author        = {Singh, Anikait and Zhang, Teresa and Lee, Yoonho and Nair, Roshen Sanjay and Kumar, Aviral and Finn, Chelsea},
+  year          = {2026},
+  eprint        = {2610.22273},
+  archivePrefix = {arXiv},
 }
 ```
 
